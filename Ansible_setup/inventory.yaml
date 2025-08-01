@@ -1,4 +1,6 @@
 # This is where we define our clients
+# NB : You can add more nodes (clients) in this file by entering the IP address, user, Private key.
+
 
 all:
   hosts:
@@ -6,4 +8,9 @@ all:
     node1:
       ansible_host: 192.168.220.135
       ansible_user: root
-      ansible_ssh_private_key_file: /root/.ssh/id_ed25519    # NB : You can add more nodes (clients) in this file by entering the IP address, user, Private key.
+      ansible_ssh_private_key_file: /root/.ssh/id_ed25519   
+
+    node2:
+      ansible_host: 192.168.220.136
+      ansible_user: root
+      ansible_ssh_private_key_file: /root/.ssh/id_ed25519
