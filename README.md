@@ -15,6 +15,8 @@ This project aims to deploy an optimal and automated supervision solution to rem
 - Grafana  
 - SSH
 - Alertmanager
+- Wazuh
+- AWX
 
 ## Getting started
 ---
@@ -44,6 +46,8 @@ Once the connection Grafana-Zabbix is established, we can create dashboards rela
 STEP 7 : In Grafana UI, go to Administration >> Users and access >> Service accounts section then click Add service account give it an name and Role Admin and click create and +Add service account token button to generate an api token.
 
 STEP 8 : Copy then paste the API token to the script **create_dashboard.py**.
+
+STEP 9 : Create a dashboard one-time and then import it and insert it in the script **create_dashboard.py**.
 
 STEP 9 : Define all the clients hosts in the **inventory.yaml**.
 
