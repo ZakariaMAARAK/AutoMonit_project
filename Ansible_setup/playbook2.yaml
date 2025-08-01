@@ -1,3 +1,5 @@
+# Run this playbook first
+
 ---
 - name: Transfert SSH public key to clients
   hosts: all
