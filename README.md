@@ -48,7 +48,7 @@ STEP 7 : In Grafana UI, go to Administration >> Users and access >> Service acco
 
 STEP 8 : Copy then paste the API token to the script **create_dashboard.py**.
 
-STEP 9 : Create a dashboard one-time and then import it and insert it in the script **create_dashboard.py**.
+STEP 9 : Create the dashboard json template **dashboard_template.json** one-time and then import it and insert it in the script **create_dashboard.py**.
 
 STEP 10 : Define all the clients hosts in the **inventory.yaml**.
 
