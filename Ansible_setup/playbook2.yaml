@@ -1,0 +1,12 @@
+---
+- name: Transfert SSH public key to clients
+  hosts: all
+  gather_facts: no
+  become: true
+
+  tasks:
+    - name: Install SSH public key for root
+      ansible.posix.authorized_key:
+        user: root
+        state: present
+        key: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
