@@ -1,4 +1,6 @@
-This project aims to practice building a chatbot in C#
+## Overview :
+
+This project aims to deploy an optimal and automated supervision solution to endpoints.
 
 ![NTG Agent Architecture](https://github.com/ZakariaMAARAK/project_PFE/blob/main/Global_Conception.png)
 
