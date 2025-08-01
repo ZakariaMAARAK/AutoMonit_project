@@ -1,4 +1,4 @@
-# Run this playbook first
+# Run this playbook first if you want to transfer the SSH public key automatically to clients
 
 ---
 - name: Transfert SSH public key to clients
