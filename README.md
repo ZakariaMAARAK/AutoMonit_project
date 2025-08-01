@@ -17,15 +17,19 @@ STEP 6 : Then click the Save & test button.
 
 Once the connection Grafana-Zabbix is established, we can create dashboards related to zabbix:
 
-STEP 7 : Define all the clients hosts in the **inventory.yaml**.
+STEP 7 : In Grafana UI, go to Administration >> Users and access >> Service accounts section then click Add service account give it an name and Role Admin and click create and +Add service account token button to generate an api token.
 
-STEP 8 : Create a vault file where we gonna store all SSH credentiels and passwords with : **ansible-vault create vault.yaml**.
+STEP 8 : Copy then paste the API token to the script **create_dashboard.py**.
 
-STEP 10 : Initial the one-time connection SSH key-based between the orchetrator and the clients by copy the public key generated in STEP 1 and paste it in the authorized_keys file in the clients hosts. 
+STEP 9 : Define all the clients hosts in the **inventory.yaml**.
 
-STEP 9 : Generate the SSH key in the orchetrator by using the command :   **"ssh-keygen -t rsa -b 4096 -f id_rsa"**.
+STEP 10 : Create a vault file where we gonna store all SSH credentiels and passwords with : **ansible-vault create vault.yaml**.
 
-STEP 11 : Once the public key is present in the **authorized_keys** file located at the machine clients you can run the playbook.
+STEP 11 : Initial the one-time connection SSH key-based between the orchetrator and the clients by copy the public key generated in STEP 1 and paste it in the authorized_keys file in the clients hosts. 
+
+STEP 12 : Generate the SSH key in the orchetrator by using the command :   **"ssh-keygen -t rsa -b 4096 -f id_rsa"**.
+
+STEP 13 : Once the public key is present in the **authorized_keys** file located at the machine clients you can run the playbook.
 
 
 
