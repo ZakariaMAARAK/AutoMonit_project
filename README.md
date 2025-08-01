@@ -2,12 +2,26 @@ This project aims to practice building a chatbot in C#
 
 ![NTG Agent Architecture](https://github.com/ZakariaMAARAK/project_PFE/blob/main/Global_Conception.png)
 
-Technologies and frameworks
+## Technologies and frameworks
+---
 
+- Docker & Docker compose
+- Ansible  
+- Zabbix 
+- APIs  
+- Prometheus  
+- Grafana  
+- SSH
+- Alertmanager
 
+## Getting started
+---
 
+- Setup a virtualized environnement : Install Vmware Workstatioin Pro where we gonna put the server (Orchestrtor) and the clients (Debian + CentOS)
 
-**------ STEPS TO LAUNCH THE PROJECT ------**
+- You can refer to the Steps listed below :
+
+## ------ STEPS TO LAUNCH THE PROJECT ------
 
 STEP 1 : Upload the **docker-compose.yml** file in your local machine and launch it by the command : **docker-compose up -d**
 
