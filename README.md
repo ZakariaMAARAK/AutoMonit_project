@@ -55,7 +55,7 @@ STEP 10 : Define all the clients hosts in the **inventory.yaml**.
 STEP 11 : Create a vault file where we gonna store all SSH credentiels and passwords with : **ansible-vault create vault.yaml**.
 
 STEP 12 : 
-- Option 1: Initial the one-time connection SSH key-based between the orchetrator and the clients by copy the public key generated in STEP 1 and paste it in the authorized_keys file in the clients hosts. 
+- Option 1: Initial the one-time connection SSH key-based between the orchetrator and the clients by copying the public key generated in STEP 1 and paste it manually in the authorized_keys file in the clients hosts. 
 
 - Option 2: Run the playbook2.yaml to automatically transfer the SSH public key to clients if not skip directly to playbook.yaml.
   
