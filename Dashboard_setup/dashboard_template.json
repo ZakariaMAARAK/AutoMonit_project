@@ -1,0 +1,214 @@
+{
+  "uid": null,
+  "title": "Dashboard - __VM_NAME__",
+  "timezone": "browser",
+  "refresh": "5s",
+  "schemaVersion": 37,
+  "version": 0,
+  "tags": ["zabbix", "linux"],
+  "panels": [
+    {
+      "id": 5,
+      "type": "stat",
+      "title": "Status - __VM_NAME__",
+      "gridPos": { "x": 0, "y": 16, "w": 6, "h": 4 },
+      "datasource": {
+        "uid": "deh0akkjja6tcf",
+        "type": "alexanderzobnin-zabbix-datasource"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "group": { "filter": "Linux servers" },
+          "host": { "filter": "__VM_NAME__" },
+          "application": { "filter": "" },
+          "item": { "filter": "Zabbix agent availability" },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false
+          },
+          "resultFormat": "time_series"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [
+            {
+              "type": "value",
+              "options": {
+                "1": {
+                  "text": " ✅ Available"
+                },
+                "0": {
+                  "text": " ⚠️  Unavailable"
+                }
+                
+              }
+            }
+          ],
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "gray", "value": null },
+              { "color": "green", "value": 1 },
+              { "color": "red", "value": 2 }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "reduceOptions": {
+          "calcs": ["last"],
+          "fields": "",
+          "values": false
+        },
+        "orientation": "horizontal",
+        "textMode": "value"
+      }
+    },
+
+    {
+      "id": 1,
+      "type": "timeseries",
+      "title": "CPU Usage - __VM_NAME__",
+      "gridPos": { "x": 0, "y": 0, "w": 12, "h": 8 },
+      "targets": [
+        {
+          "refId": "A",
+          "group": { "filter": "Linux servers" },
+          "host": { "filter": "__VM_NAME__" },
+          "application": { "filter": "" },
+          "item": { "filter": "CPU utilization" },
+          "mode": 0,
+          "options": { "showDisabledItems": false },
+          "resultFormat": "time_series"
+        }
+      ],
+      "datasource": {
+        "uid": "deh0akkjja6tcf",
+        "type": "alexanderzobnin-zabbix-datasource"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "fixed",
+            "fixedColor": "#E24D42"
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "id": 2,
+      "type": "timeseries",
+      "title": "Memory Usage - __VM_NAME__",
+      "gridPos": { "x": 12, "y": 0, "w": 12, "h": 8 },
+      "targets": [
+        {
+          "refId": "B",
+          "group": { "filter": "Linux servers" },
+          "host": { "filter": "__VM_NAME__" },
+          "application": { "filter": "" },
+          "item": { "filter": "Available memory" },
+          "mode": 0,
+          "options": { "showDisabledItems": false },
+          "resultFormat": "time_series"
+        }
+      ],
+      "datasource": {
+        "uid": "deh0akkjja6tcf",
+        "type": "alexanderzobnin-zabbix-datasource"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "fixed",
+            "fixedColor": "#1F78C1"
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "id": 3,
+      "type": "timeseries",
+      "title": "Network Traffic - __VM_NAME__",
+      "gridPos": { "x": 0, "y": 8, "w": 12, "h": 8 },
+      "targets": [
+        {
+          "refId": "C",
+          "group": { "filter": "Linux servers" },
+          "host": { "filter": "__VM_NAME__" },
+          "application": { "filter": "" },
+          "item": { "filter": "Interface ens33: Bits sent" },
+          "mode": 0,
+          "options": { "showDisabledItems": false },
+          "resultFormat": "time_series"
+        },
+        {
+          "refId": "B",
+          "group": { "filter": "Linux servers" },
+          "host": { "filter": "__VM_NAME__" },
+          "application": { "filter": "" },
+          "item": { "filter": "Interface ens33: Bits received" },
+          "mode": 0,
+          "options": { "showDisabledItems": false },
+          "resultFormat": "time_series"
+        }
+      ],
+      "datasource": {
+        "uid": "deh0akkjja6tcf",
+        "type": "alexanderzobnin-zabbix-datasource"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "palette-classic" }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "id": 4,
+      "type": "timeseries",
+      "title": "Disk I/O - __VM_NAME__",
+      "gridPos": { "x": 12, "y": 8, "w": 12, "h": 8 },
+      "targets": [
+        {
+          "refId": "A",
+          "group": { "filter": "Linux servers" },
+          "host": { "filter": "__VM_NAME__" },
+          "application": { "filter": "" },
+          "item": { "filter": "sda: Disk write rate" },
+          "mode": 0,
+          "options": { "showDisabledItems": false },
+          "resultFormat": "time_series"
+        },
+        {
+          "refId": "B",
+          "group": { "filter": "Linux servers" },
+          "host": { "filter": "__VM_NAME__" },
+          "application": { "filter": "" },
+          "item": { "filter": "sda: Disk read rate" },
+          "mode": 0,
+          "options": { "showDisabledItems": false },
+          "resultFormat": "time_series"
+        }
+      ],
+      "datasource": {
+        "uid": "deh0akkjja6tcf",
+        "type": "alexanderzobnin-zabbix-datasource"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "palette-classic" }
+        },
+        "overrides": []
+      }
+    }
+  ]
+}
+
