@@ -1,4 +1,4 @@
-                                                         **------ STEPS TO LAUNCH THE PROJECT ------**
+                                                     **------ STEPS TO LAUNCH THE PROJECT ------**
 
 STEP 1 : Upload the **docker-compose.yml** file in your local machine and launch it by the command : **docker-compose up -d**
 
