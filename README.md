@@ -1,3 +1,11 @@
+This project aims to practice building a chatbot in C#
+
+![NTG Agent Architecture](https://github.com/ZakariaMAARAK/project_PFE/blob/main/Global_Conception.png)
+
+Technologies and frameworks
+
+
+
 
 **------ STEPS TO LAUNCH THE PROJECT ------**
 
