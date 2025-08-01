@@ -7,7 +7,7 @@ ZABBIX_PASSWORD = "zabbix"
 
 GRAFANA_URL = "http://localhost:3000"
 GRAFANA_API_TOKEN = "glsa_WheqMkk7BZni0yi7SOih1GLrp3lTzHEy_38813b3d" # NB : This Grafana API token session you can create your own (STEP 7/8)
-TEMPLATE_FILE = "dashboard_template.json"
+TEMPLATE_FILE = "dashboard_template.json" # NB : This is the imported json template you can create your own and import it as well (STEP 9)
 
 
 ZABBIX_DATASOURCE_UID = "aes45x3zoq874a"
