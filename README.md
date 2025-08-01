@@ -28,7 +28,7 @@ This project aims to deploy an optimal and automated supervision solution to rem
 
 ## STEPS TO LAUNCH THE PROJECT
 
-STEP 1 : Upload the **docker-compose.yml** file in your local machine and launch it by the command : **docker-compose up -d**
+STEP 1 : Upload the **docker-compose.yml** file in your local machine and launch it by using the command : **docker-compose up -d**
 
 You can see all the services listed with : **docker ps** but for now we gonna focus on a Grafana and Zabbix services :
 
