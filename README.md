@@ -17,6 +17,7 @@ This project aims to deploy an optimal and automated supervision solution to rem
 - Alertmanager
 - Wazuh
 - AWX
+- IPsec
 
 ## Getting started
 ---
@@ -55,6 +56,7 @@ STEP 11 : Create a vault file where we gonna store all SSH credentiels and passw
 
 STEP 12 : 
 - Option 1: Initial the one-time connection SSH key-based between the orchetrator and the clients by copy the public key generated in STEP 1 and paste it in the authorized_keys file in the clients hosts. 
+
 - Option 2: Run the playbook2.yaml to automatically transfer the SSH public key to clients if not skip directly to playbook.yaml.
   
 STEP 13 : Generate the SSH key in the orchetrator by using the command :   **"ssh-keygen -t rsa -b 4096 -f id_rsa"**.
