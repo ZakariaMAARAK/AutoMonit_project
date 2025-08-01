@@ -1,3 +1,6 @@
+
+# This is just an example, you can custumize your own instance json one-time and apply it to all the clients
+
 {
   "uid": null,
   "title": "Dashboard - __VM_NAME__",
