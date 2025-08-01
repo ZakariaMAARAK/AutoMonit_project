@@ -21,7 +21,7 @@ This project aims to deploy an optimal and automated supervision solution to rem
 ## Getting started
 ---
 
-- Setup a virtualized environnement : Install Vmware Workstatioin Pro where we gonna put the server (Orchestrtor) and the clients (Debian + CentOS)
+- Setup a virtualized environnement : Install VMware Workstatioin Pro where we gonna put the server (Orchestrtor) and the clients (Debian + CentOS)
 
 - You can refer to the Steps listed below :
 
@@ -49,16 +49,14 @@ STEP 8 : Copy then paste the API token to the script **create_dashboard.py**.
 
 STEP 9 : Create a dashboard one-time and then import it and insert it in the script **create_dashboard.py**.
 
-STEP 9 : Define all the clients hosts in the **inventory.yaml**.
+STEP 10 : Define all the clients hosts in the **inventory.yaml**.
 
-STEP 10 : Create a vault file where we gonna store all SSH credentiels and passwords with : **ansible-vault create vault.yaml**.
+STEP 11 : Create a vault file where we gonna store all SSH credentiels and passwords with : **ansible-vault create vault.yaml**.
 
-STEP 11 : Initial the one-time connection SSH key-based between the orchetrator and the clients by copy the public key generated in STEP 1 and paste it in the authorized_keys file in the clients hosts. 
+STEP 12 : 
+- Option 1: Initial the one-time connection SSH key-based between the orchetrator and the clients by copy the public key generated in STEP 1 and paste it in the authorized_keys file in the clients hosts. 
+- Option 2: Run the playbook2.yaml to automatically transfer the SSH public key to clients if not skip directly to playbook.yaml.
+  
+STEP 13 : Generate the SSH key in the orchetrator by using the command :   **"ssh-keygen -t rsa -b 4096 -f id_rsa"**.
 
-STEP 12 : Generate the SSH key in the orchetrator by using the command :   **"ssh-keygen -t rsa -b 4096 -f id_rsa"**.
-
-STEP 13 : Once the public key is present in the **authorized_keys** file located at the machine clients you can run the playbook.
-
-
-
-
+STEP 14 : Once the public key is present in the **authorized_keys** file located at the machine clients you can run the playbook.
