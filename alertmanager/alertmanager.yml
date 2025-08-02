@@ -1,0 +1,16 @@
+# This file is for notifications of alerts by email
+
+global:
+  smtp_smarthost: 'smtp.gmail.com:587'
+  smtp_from: 'maarak.zakaria03@gmail.com'
+  smtp_auth_username: 'maarak.zakaria@etu.uae.ac.ma'
+  smtp_auth_password: 'zkiko'
+
+route:
+  receiver: email-notifier
+
+receivers:
+  - name: email-notifier
+    email_configs:
+      - to: 'maarak.zakaria03@gmail.com'
+        send_resolved: true
