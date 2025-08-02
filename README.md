@@ -2,7 +2,7 @@
 
 This project aims to deploy an optimal and automated supervision solution to remote endpoints via a secured tunnel IPsec.
 
-![Diagram](https://github.com/ZakariaMAARAK/project_PFE/blob/main/Global_Conception.png)
+![High Quality Diagram](https://github.com/ZakariaMAARAK/project_PFE/blob/main/Global_Conception.png)
 
 ## Technologies and frameworks :
 ---
