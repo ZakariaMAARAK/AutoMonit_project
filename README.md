@@ -24,7 +24,7 @@ This project aims to deploy an optimal and automated supervision solution to rem
 
 - Setup a virtualized environnement : Install VMware Workstatioin Pro where we gonna put the server (Orchestrtor) and the clients (Debian + CentOS)
 
-- You can refer to the Steps listed below :
+- You can refer to the Steps listed in the next section :
 
 ## Steps to launch the playbook :
 
