@@ -22,7 +22,7 @@ This project aims to deploy an optimal and automated supervision solution to rem
 ## Getting started :
 ---
 
-- Setup a virtualized environnement : Install VMware Workstatioin Pro where we gonna put the server (Orchestrtor) and the clients (Debian + CentOS)
+- Setup a virtualized environnement : Install VMware Workstatioin Pro where we gonna put the server (Orchestrator) and the  VMs clients (Debian + CentOS)
 
 - You can refer to the Steps listed in the next section :
 
