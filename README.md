@@ -27,6 +27,7 @@ This project aims to deploy an optimal and automated supervision solution to rem
 - You can refer to the Steps listed in the next section :
 
 ## Steps to launch the playbook :
+---
 
 STEP 1 : Upload the **docker-compose.yml** file in your local machine and launch it by using the command : **docker-compose up -d**
 
