@@ -15,7 +15,7 @@ This project aims to deploy an optimal and automated supervision solution to rem
 - Grafana  
 - SSH
 - Alertmanager
-- Wazuh
+- Wazuh (SIEM)
 - AWX
 - IPsec
 
