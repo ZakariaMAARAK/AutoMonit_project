@@ -1,11 +1,12 @@
-# Run this playbook only after running playbook2.yaml
-
 ---
-- hosts: all   
+- hosts: all
   become: true
 
+  vars_files:
+    - vault.yml
+
   vars:
-    zabbix_server_ip: "IP"        # NB : Replace the IP with your orchestrator IP address 
+    zabbix_server_ip: "192.168.220.134"  # NB : Replace the IP with your orchestrator IP address 
     zabbix_agent_hostname: "{{ inventory_hostname }}"
 
   tasks:
@@ -13,9 +14,10 @@
       ansible.posix.authorized_key:
         user: root
         state: present
-        key: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}" # NB : This is the path where the public key is located
-        
- # Installation of zabbix-agent2 in both debian and CentOS Linux distribution
+        key: "{{ lookup('file', '/root/.ssh/id_ed25519.pub') }}"  # NB : This is the path where the public key is located
+
+
+    # Installation of zabbix-agent2 in both debian and CentOS Linux distribution
     - name: Ajout du repo de Zabbix dans Client 1 (Debian)
       apt:
         deb: "https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-5+debian12_all.deb"
@@ -71,8 +73,17 @@
       systemd:
         name: zabbix-agent2
         state: restarted
-        
-  # Creation of dashboards to the clients
+  
+    
+    # Creation of dashboards to the clients
     - name: Run create_dashboard.py script from control node
       command: python3 /home/zakariamaarak/myproject/create_dashboard.py
-      delegate_to: localhost
+      delegate_to: localhos# Run this playbook only after running playbook2.yaml
+
+      
+  
+        
+
+    
+        
+  
