@@ -16,7 +16,7 @@
       "title": "Status - __VM_NAME__",
       "gridPos": { "x": 0, "y": 16, "w": 6, "h": 4 },
       "datasource": {
-        "uid": "deh0akkjja6tcf",
+        "uid": "aes45x3zoq874a",
         "type": "alexanderzobnin-zabbix-datasource"
       },
       "targets": [
@@ -92,7 +92,7 @@
         }
       ],
       "datasource": {
-        "uid": "deh0akkjja6tcf",
+        "uid": "aes45x3zoq874a",
         "type": "alexanderzobnin-zabbix-datasource"
       },
       "fieldConfig": {
@@ -123,7 +123,7 @@
         }
       ],
       "datasource": {
-        "uid": "deh0akkjja6tcf",
+        "uid": "aes45x3zoq874a",
         "type": "alexanderzobnin-zabbix-datasource"
       },
       "fieldConfig": {
@@ -164,7 +164,7 @@
         }
       ],
       "datasource": {
-        "uid": "deh0akkjja6tcf",
+        "uid": "aes45x3zoq874a",
         "type": "alexanderzobnin-zabbix-datasource"
       },
       "fieldConfig": {
@@ -202,7 +202,7 @@
         }
       ],
       "datasource": {
-        "uid": "deh0akkjja6tcf",
+        "uid": "aes45x3zoq874a",
         "type": "alexanderzobnin-zabbix-datasource"
       },
       "fieldConfig": {
@@ -214,4 +214,13 @@
     }
   ]
 }
+
+
+
+
+
+
+
+
+
 
