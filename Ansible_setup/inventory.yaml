@@ -8,10 +8,10 @@ all:
       ansible_host: 192.168.220.139
       ansible_user: client2
       ansible_ssh_private_key_file: /root/.ssh/id_ed25519
-      
+      ansible_ssh_pass: "{{ ssh_passwords.client2 }}" 
 
     node1:
       ansible_host: 192.168.220.135
       ansible_user: client1
       ansible_ssh_private_key_file: /root/.ssh/id_ed25519
-        
+      ansible_ssh_pass: "{{ ssh_passwords.client1 }}"  
