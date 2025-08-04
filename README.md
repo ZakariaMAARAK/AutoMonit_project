@@ -56,8 +56,9 @@ Once the connection Grafana-Zabbix is established, we can create dashboards rela
 - STEP 11 : Generate the SSH key in the orchetrator by using the command : **"ssh-keygen -t rsa -b 4096 -f id_rsa"**.
 
 - STEP 12 :
-            Option 1 : Run the playbook2.yaml to automatically transfer the SSH public key to clients : **ansible-playbook -i inventory.yaml playbook2.yaml -u root -k**
-            Option 2 : Initial the one-time connection SSH key-based between the orchetrator and the clients by copying the public key generated in STEP 1 and paste it manually in the **authorized_keys** file in the clients hosts. 
+   Option 1 : Run the playbook2.yaml to automatically transfer the SSH public key to clients : **ansible-playbook -i inventory.yaml playbook2.yaml -u root -k**
+
+   Option 2 : Initial the one-time connection SSH key-based between the orchetrator and the clients by copying the public key generated in STEP 1 and paste it manually in the **authorized_keys** file in the clients hosts. 
   
 - STEP 13 : Create a vault file where we gonna store all SSH credentiels and passwords with : **ansible-vault create vault.yaml**.
 
