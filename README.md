@@ -25,7 +25,7 @@ This project aims to deploy an optimal and automated supervision solution to rem
 ![High Quality Diagram](https://github.com/ZakariaMAARAK/project_PFE/blob/main/Global_Conception.png)
 
 ## Technologies and frameworks :
----
+--
 
 - Docker & Docker compose
 - Ansible  
@@ -40,14 +40,14 @@ This project aims to deploy an optimal and automated supervision solution to rem
 - IPsec
 
 ## Getting started :
----
+--
 
 - Setup a virtualized environnement : Install VMware Workstatioin Pro where we gonna put the server (Orchestrator) and the  VMs clients (Debian + CentOS)
 
 - You can refer to the Steps listed in the next section :
 
 ## Steps to launch the playbook :
----
+--
 
 - STEP 1 : Upload the **docker-compose.yml** file in your local machine and launch it by using the command : **docker-compose up -d**
 
